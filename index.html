@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+</head>
+<body>
+  <div class="wrapper">
+
+    <img src="images/logo.svg" alt="logo">
+
+    <div class="container">
+
+      <div class="info">
+
+        <h3>Bill</h3>
+        <div class="bill-container">
+          <img src="images/icon-dollar.svg" alt="icon-dollar">
+          <input class="bill" type="number" placeholder="0" id="bill">
+        </div>
+
+        <div class="tip">
+          <h3>Select Tip %</h3>
+          <div class="buttons">
+            <!-- Add data-tip attribute and shared class "tip-button" -->
+            <button class="tip-button" data-tip="5" id="five">5%</button>
+            <button class="tip-button" data-tip="10" id="ten">10%</button>
+            <button class="tip-button" data-tip="15" id="fifteen">15%</button>
+            <button class="tip-button" data-tip="25" id="twentyfive">25%</button>
+            <button class="tip-button" data-tip="50" id="fifty">50%</button>
+            <input type="number" placeholder="Custom" id="custom">
+          </div>
+        </div>
+
+        <h3>Number of People</h3>
+        <div class="number-people">
+          <img src="images/icon-person.svg" alt="icon-person">
+          <input type="number" placeholder="0" class="number" id="people">
+        </div>
+
+      </div>
+
+      <div class="result">
+        <div class="tip-amount">
+          <h3>Tip Amount <br> <span class="grey">/ person</span></h3>
+          <h3 class="amount" id="tip-amount">$0.00</h3>
+        </div>
+
+        <div class="total">
+          <h3>Total <br><span class="grey"> / person</span></h3>
+          <h3 class="total-amount" id="total-amount">$0.00</h3>
+        </div>
+
+        <button id="reset" class="reset">Reset</button>
+      </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br>
+      Coded by <a href="#">DevAkshat</a>.
+    </div>
+  </div>
+</body>
+</html>
